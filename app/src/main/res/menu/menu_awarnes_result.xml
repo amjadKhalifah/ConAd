@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="conad.tum.conad.ResponseResultActivity">
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" android:showAsAction="never" />
+
+    <item
+        android:id="@+id/repeat_test"
+        android:icon="@drawable/ic_reply_50"
+        android:title="@string/repeat_test"
+        />
+    <item
+        android:id="@+id/show_result"
+        android:icon="@drawable/ic_search_50"
+        android:title="@string/show_final_result"
+    />
+
+</menu>

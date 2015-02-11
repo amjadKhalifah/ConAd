@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="memory_arrow_flip">2000</integer>
+    <integer name="response_color_flip">2000</integer>
+
+    <!-- for response time score calculation-->
+    <integer name="standard_average_response_time">290</integer>
+    <integer name="estimated_input_lag">60</integer>
+    <integer name="estimated_display_lag">50</integer>
+    <!-- should be as percentages-->
+    <integer name="response_time_weight">40</integer>
+    <integer name="memory_weight">30</integer>
+    <integer name="awareness_weight">30</integer>
+
+</resources>

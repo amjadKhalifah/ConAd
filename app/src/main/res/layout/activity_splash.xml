@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="40px"
+    android:layout_marginRight="40px"
+    android:keepScreenOn="true"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_splash"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/textView"
+       />
+
+    <TextView
+        android:id="@+id/tip_tap_for_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30px"
+        android:text="@string/tap_for_options"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/conad_logo"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>

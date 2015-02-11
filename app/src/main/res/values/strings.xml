@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ConAd</string>
+    <string name="title_activity_splash">Concentration Advisor</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="voice_trigger">Start a concentration test</string>
+    <string name="tap_for_options">Tap for options!</string>
+    <string name="instructions">Help</string>
+    <string name="new_test">New test</string>
+    <string name="repeat_test">Repeat test</string>
+    <string name="title_activity_response_time_test1">Tap when you see </string>
+    <string name="tap_when_ready">Tap when you are ready</string>
+    <string name="title_activity_color_response_time_test">ColorResponseTimeTestActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_response_result">Partial Result Activity</string>
+    <string name="title_activity_memory_test">MemoryTestActivity</string>
+    <string name="title_activity_awareness_test">AwarenessTestActivity</string>
+    <string name="awareness_test_instruction">now look ahead as before. And wait for the next direction.</string>
+    <string name="awareness_test_initial_instruction">Turn your head according to the text you see.</string>
+    <string name="show_final_result">Show Overall Result</string>
+    <string name="title_activity_main_result">Hello World Immersion</string>
+    <string name="level_A_recommendation">Enjoy your drive.</string>
+    <string name="level_B_recommendation">Pull over for a break if you are driving for long.</string>
+    <string name="level_C_recommendation">Try a 20 minutes nap.</string>
+    <string name="level_D_recommendation"> Don\'t drive now. Call someone to pick you up.</string>
+    <string name="level_E_recommendation"> Don\'t drive now. Call someone to pick you up.</string>
+
+</resources>
