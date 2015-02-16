@@ -171,6 +171,10 @@ public class MemoryTestActivity extends Activity {
         resultTxt.setVisibility(View.VISIBLE);
         resultTxt.setText(result);
 
+        //Start the following test
+        startActivity(new Intent(this, AwarenessTestStartupActivity.class));
+        finish();
+
 
     }
 

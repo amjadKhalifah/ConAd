@@ -68,6 +68,18 @@ public class Results {
 
         return average;
     }
+    public float getMinimumResponseResult() {
+        int count = 0;
+        float minimum = responseTimes.get(0);
+        for (long result : responseTimes) {
+            if (result != -1) {
+                if(result < minimum){
+                  minimum = result;
+                }
+            }
+        }
+        return minimum;
+    }
 
     public float getAverageMemoryResult() {
         int correctCount = 0;

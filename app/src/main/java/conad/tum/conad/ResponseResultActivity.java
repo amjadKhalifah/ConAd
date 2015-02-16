@@ -97,6 +97,9 @@ public class ResponseResultActivity extends Activity {
         float average = Results.getInstance().getAverageResponseResult();
         result += "Your overall average is "+ average+" ms";
 
+        startActivity(new Intent(this, MemoryTestStartupActivity.class));
+        finish();
+
         return result;
     }
 

@@ -92,7 +92,7 @@ public class MemoryTestStartupActivity extends Activity {
     private View buildView() {
         CardBuilder card = new CardBuilder(this, CardBuilder.Layout.TEXT);
         card.setFootnote(R.string.tap_when_ready);
-        card.setText("Remember the arrows sequence.");
+        card.setText("Remember the sequence.\nUse (up,down,left,right) as commands.");
         return card.getView();
     }
 

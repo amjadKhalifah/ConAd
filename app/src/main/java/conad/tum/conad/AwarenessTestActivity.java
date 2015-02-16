@@ -89,7 +89,7 @@ public class AwarenessTestActivity extends Activity implements OnHeadGestureList
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.repeat_test) {
-            startActivity(new Intent(this, AwarenessTestStartupActivity.class));
+            startActivity(new Intent(this, TestStartupActivity.class));
             finish();
             return true;
         }
@@ -129,6 +129,7 @@ public class AwarenessTestActivity extends Activity implements OnHeadGestureList
         handleResult(lastCommand.equals("right"),"right");
     }
     private void handleResult(boolean correct, String command) {
+
         String text ="";
         if (correct){
             text = "Cool ";
@@ -140,14 +141,21 @@ public class AwarenessTestActivity extends Activity implements OnHeadGestureList
         if (index!=-1){
             text+= getString(R.string.awareness_test_instruction);
         }
+
         displayNextCommand();
         commandsTxt.setText(text);
+
+        if(finished){
+            startActivity(new Intent(this, MainResultActivity.class));
+            finish();
+        }
+
 
     }
 
     private void showResult() {
        String result ="";
-        result = "Your score in this test is "+ String.format("%.02f", ((this.result/3.00)*100)) +"%.";
+        //result = "Your score in this test is "+ String.format("%.02f", ((this.result/3.00)*100)) +"%.";
         optionsTxt.setVisibility(View.VISIBLE);
         commandsTxt.setText(result);
 
@@ -160,22 +168,22 @@ public class AwarenessTestActivity extends Activity implements OnHeadGestureList
                     mHeadGestureDetector.start();
                     lastCommand = commands.get(index);
                     if (lastCommand.equals("nod")) {
-                        commandsTxt.setText("Please nod your head.");
+                        commandsTxt.setText("Nod");
                     } else {
-                        commandsTxt.setText("Please turn your head to the " + lastCommand + ".");
+                        commandsTxt.setText("Turn " + lastCommand );
                     }
                     shiftIndex();
                 } else {
                     finished = true;
                     Results.getInstance().addAwarnessResult(result);
 //                    Log.d("ConAd", "awarness result"+ result);
-                    showResult();
+//                   showResult();
 
                 }
 
             }
-        }, 5000);
-        // 5 sec so that user can get back to her position
+        }, 4000);
+        // 4 sec so that user can get back to her position
 
     }
 

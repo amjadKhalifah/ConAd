@@ -125,6 +125,7 @@ public class SplashActivity extends Activity {
     private void startTest() {
         startActivity(new Intent(this, TestStartupActivity.class));
         finish();
+
     }
 
     /**
