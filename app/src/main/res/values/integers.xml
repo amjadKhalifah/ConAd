@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <integer name="memory_arrow_flip">2000</integer>
+    <integer name="memory_arrow_flip">1000</integer>
     <integer name="response_color_flip">2000</integer>
 
     <!-- for response time score calculation-->

@@ -26,7 +26,7 @@ public class Results {
     private List<Long> responseTimes;
     private List<Boolean> memoryResults;
     private List<Integer> awarnessResults;
-    private float responseTimeScore, memoryScore, awarenessScore;
+    private float responseTime, responseTimeScore, memoryScore, awarenessScore;
 
     private Results() {
         this.responseTimes = new ArrayList<>();
@@ -51,6 +51,12 @@ public class Results {
         return responseTimes.get(responseTimes.size() - 1);
     }
 
+    public void setResponseTime(float responseTime){
+        this.responseTime = responseTime;
+    }
+    public float getResponseTime(){
+        return responseTime;
+    }
     public float getAverageResponseResult() {
         long sum = 0;
         int count = 0;

@@ -145,19 +145,15 @@ public class AwarenessTestActivity extends Activity implements OnHeadGestureList
         displayNextCommand();
         commandsTxt.setText(text);
 
-        if(finished){
-            startActivity(new Intent(this, MainResultActivity.class));
-            finish();
-        }
-
-
     }
 
     private void showResult() {
        String result ="";
         //result = "Your score in this test is "+ String.format("%.02f", ((this.result/3.00)*100)) +"%.";
-        optionsTxt.setVisibility(View.VISIBLE);
-        commandsTxt.setText(result);
+        //optionsTxt.setVisibility(View.VISIBLE);
+        //commandsTxt.setText(result);
+        startActivity(new Intent(this, MainResultActivity.class));
+        finish();
 
     }
 
@@ -177,13 +173,13 @@ public class AwarenessTestActivity extends Activity implements OnHeadGestureList
                     finished = true;
                     Results.getInstance().addAwarnessResult(result);
 //                    Log.d("ConAd", "awarness result"+ result);
-//                   showResult();
+                    showResult();
 
                 }
 
             }
-        }, 4000);
-        // 4 sec so that user can get back to her position
+        }, 3000);
+        // 3 sec so that user can get back to her position
 
     }
 

@@ -46,14 +46,15 @@ public class MainResultActivity extends Activity {
                         "Your final score: "+String.format("%.02f", finalScore)+" %.\n"+
                         "Your concentration level: "+level+".")
                 .setFootnote("Swipe for details"));
+        float responseTime = Results.getInstance().getResponseTime();
         float responseScore = Results.getInstance().getResponseTimeScore();
         float memoryScore = Results.getInstance().getMemoryScore();
         float awarnessScore = Results.getInstance().getAwarenessScore();
 
         mCards.add(new CardBuilder(this, CardBuilder.Layout.TEXT)
-                .setText("Response time test score : "+String.format("%.02f", responseScore)+"%\n"+
-                         "Short memory test score  : "+String.format("%.02f", memoryScore)+"%\n"+
-                         "Self awareness test score: "+String.format("%.02f", awarnessScore)+"%")
+                .setText("Response time : "+String.format("%.02f", responseScore) + "% (" + responseTime +" ms)\n" +
+                         "Short memory : "+String.format("%.02f", memoryScore)+"%\n"+
+                         "Self awareness : "+String.format("%.02f", awarnessScore)+"%")
                 .setFootnote("Swipe for details"));
 
         mCards.add(new CardBuilder(this, CardBuilder.Layout.TEXT)

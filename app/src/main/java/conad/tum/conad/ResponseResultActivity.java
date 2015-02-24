@@ -47,6 +47,7 @@ public class ResponseResultActivity extends Activity {
         mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
         mGestureDetector = new GestureDetector(this).setBaseListener(mBaseListener);
         String result = formatResponseResult();
+        Results.getInstance().setResponseTime(Results.getInstance().getAverageResponseResult());
         TextView resultTextView = (TextView)findViewById(R.id.resultTxt);
         resultTextView.setText(result);
     }
@@ -95,7 +96,8 @@ public class ResponseResultActivity extends Activity {
             result = "Response time "+ lastResult+" ms.\n";
         }
         float average = Results.getInstance().getAverageResponseResult();
-        result += "Your overall average is "+ average+" ms";
+        //result += "Your result is "+ average+" ms";
+        result += "Your result is "+ average +" ms";
 
         startActivity(new Intent(this, MemoryTestStartupActivity.class));
         finish();
