@@ -4,7 +4,7 @@
     <string name="app_name">ConAd</string>
     <string name="title_activity_splash">Concentration Advisor</string>
     <string name="hello_world">Hello world!</string>
-    <string name="voice_trigger">Start Concentration Tests</string>
+    <string name="voice_trigger">Start ConAd</string>
     <string name="tap_for_options">Tap for options!</string>
     <string name="instructions">Help</string>
     <string name="new_test">New test</string>
