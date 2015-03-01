@@ -68,7 +68,7 @@ public class Results {
             }
         }
         if (count > 0)
-            average = sum / count;
+            average = (float) sum / count;
         else
             average = 0;
 
@@ -96,7 +96,7 @@ public class Results {
             }
         }
         if (correctCount > 0)
-            average = correctCount / memoryResults.size();
+            average = (float) correctCount / memoryResults.size();
         else
             average = 0;
 
@@ -108,9 +108,9 @@ public class Results {
         float sum = 0;
         float average;
         for (int result : awarnessResults) {
-            sum += (result / 3.00);
+            sum += (float)(result / 3.00);
         }
-        average = sum / awarnessResults.size();
+        average =(float) sum / awarnessResults.size();
         return average;
     }
 
